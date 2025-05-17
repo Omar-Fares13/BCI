@@ -7,7 +7,7 @@ from ui import BCIInterface
 
 # Main execution function
 def run_bci_system():
-    # Load and preprocess data for subject 1
+    # Load and preprocess data for subject x
     subject_id = 1
     data = load_subject_data(subject_id)
     
@@ -21,7 +21,7 @@ def run_bci_system():
     results = train_and_evaluate_classifiers(X, y)
     
     # Map numerical labels to class names
-    label_names = ["Left Hand", "Right Hand", "Foot", "Tongue"]
+    label_names = ["Left Hand", "Right Hand", "Tongue", "Foot"]
     
     # Create the UI
     root = tk.Tk()
