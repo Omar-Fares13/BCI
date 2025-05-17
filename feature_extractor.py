@@ -12,7 +12,7 @@ def extract_features_csp(epochs, labels, n_components=4):
     csp_features = []
     
     # Add regularization to help with numerical stability
-    reg = 0.1  # Try values between 0.1 and 1.0
+    reg = 0.1  # Tried values between 0.1 and 1.0 and 0.1 gave best results
     
     for class_idx in range(len(unique_labels)):
         # Create binary labels (1 for current class, 0 for others)
